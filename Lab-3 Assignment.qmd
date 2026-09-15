@@ -1,0 +1,9 @@
+---
+title: "Lab-3 Assignment"
+format: html
+---
+
+## Question-1
+
+Git gave me the message already up to date. This makes sense because I didn't make any change to the GitHub tab so there was nothing to be applied to the qmd file.
+
