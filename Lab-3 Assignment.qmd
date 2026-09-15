@@ -10,3 +10,8 @@ Git gave me the message already up to date. This makes sense because I didn't ma
 Install.packages should go in the console because this downloads the package once permanently instead of having to install it everytime the code is run which isn't needed for packages.
 
 library() should go in your .qmd file because it needs to be activated on a file by file basis rather than opening the data set permanently on your computer like packages being permanently downloaded through your console.
+```{r}
+palmerpenguins::penguins
+```
+
+The first friend is correct as palmerpenguins::penguins is calling a data set directly from the package which doesn't require the access of the entire file that library would give me. For only calling a single data set, only installation of the package and a simple call of the data set, penguins is necessary.
