@@ -18,7 +18,10 @@ The first friend is correct as palmerpenguins::penguins is calling a data set di
 
 ```{r,message=FALSE}
 library(dplyr)
+iris2<-dplyr::arrange(iris,Petal.Length)
+head(iris2)
 ```
+![This is the image of my GitHub commit history](Images_Lab3/GitHubcommit.png)
 
 
 

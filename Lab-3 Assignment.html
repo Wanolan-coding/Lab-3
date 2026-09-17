@@ -131,7 +131,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>The first friend is correct as palmerpenguins::penguins is calling a data set directly from the package that we just installed which doesn’t require the use of library. Esspecially considering library is used to access the entirety of package rather than what we need to access, a specific data set called penguins.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>iris2<span class="ot">&lt;-</span>dplyr<span class="sc">::</span><span class="fu">arrange</span>(iris,Petal.Length)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(iris2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1          4.6         3.6          1.0         0.2  setosa
+2          4.3         3.0          1.1         0.1  setosa
+3          5.8         4.0          1.2         0.2  setosa
+4          5.0         3.2          1.2         0.2  setosa
+5          4.7         3.2          1.3         0.2  setosa
+6          5.4         3.9          1.3         0.4  setosa</code></pre>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Images_Lab3/GitHubcommit.png" class="img-fluid figure-img"></p>
+<figcaption>This is the image of my GitHub commit history</figcaption>
+</figure>
 </div>
 </section>
 
