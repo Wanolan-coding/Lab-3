@@ -1,6 +1,6 @@
 ---
 title: "Lab-3 Assignment"
-format: html
+format: pdf
 ---
 
 ## Question-1
@@ -13,6 +13,7 @@ library() should go in your .qmd file because it needs to be activated on a file
 ```{r}
 palmerpenguins::penguins
 ```
+The code shouldn't have worked as we have not downloaded palmerpenguins as a package onto our computer yet. 
 
 The first friend is correct as palmerpenguins::penguins is calling a data set directly from the package that we just installed which doesn't require the use of library. Esspecially considering library is used to access the entirety of package rather than what we need to access, a specific data set called penguins.
 
