@@ -14,4 +14,11 @@ library() should go in your .qmd file because it needs to be activated on a file
 palmerpenguins::penguins
 ```
 
-The first friend is correct as palmerpenguins::penguins is calling a data set directly from the package which doesn't require the access of the entire file that library would give me. For only calling a single data set, only installation of the package and a simple call of the data set, penguins is necessary.
+The first friend is correct as palmerpenguins::penguins is calling a data set directly from the package that we just installed which doesn't require the use of library. Esspecially considering library is used to access the entirety of package rather than what we need to access, a specific data set called penguins.
+
+```{r,message=FALSE}
+library(dplyr)
+```
+
+
+

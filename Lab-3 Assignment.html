@@ -129,7 +129,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
 </div>
 </div>
-<p>The first friend is correct as palmerpenguins::penguins is calling a data set directly from the package which doesn’t require the access of the entire file that library would give me. For only calling a single data set, only installation of the package and a simple call of the data set, penguins is necessary.</p>
+<p>The first friend is correct as palmerpenguins::penguins is calling a data set directly from the package that we just installed which doesn’t require the use of library. Esspecially considering library is used to access the entirety of package rather than what we need to access, a specific data set called penguins.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
 
 </main>
